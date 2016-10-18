@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.14, created on 2016-10-17 22:11:13
+<?php /* Smarty version Smarty-3.1.14, created on 2016-10-18 20:33:22
          compiled from ".\templates\adminOptica.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1037458053061556456-24298618%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'a243b5800ca299229c4ab3b975ac25b6df364041' => 
     array (
       0 => '.\\templates\\adminOptica.tpl',
-      1 => 1476295462,
+      1 => 1476815294,
       2 => 'file',
     ),
   ),
@@ -15,6 +15,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.14',
+  'unifunc' => 'content_580530615e67e2_05704242',
   'variables' => 
   array (
     'opticas' => 0,
@@ -23,8 +25,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'marca' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.14',
-  'unifunc' => 'content_580530615e67e2_05704242',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_580530615e67e2_05704242')) {function content_580530615e67e2_05704242($_smarty_tpl) {?><div class="container" id="contenido">
   <div class="row">
@@ -50,7 +50,8 @@ $_smarty_tpl->tpl_vars['optica']->_loop = true;
 ?>
             <li><?php echo $_smarty_tpl->tpl_vars['optica']->value['titulo'];?>
  - <?php echo $_smarty_tpl->tpl_vars['optica']->value['marca']['nombre'];?>
-</li>
+<button type="button" class="btnBorrarOptica" data-id="<?php echo $_smarty_tpl->tpl_vars['optica']->value['id'];?>
+">X</button></li>
             <?php } ?>
           </ul>
         </div>

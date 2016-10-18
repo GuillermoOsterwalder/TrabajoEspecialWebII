@@ -18,19 +18,6 @@ $("#btnAgregarOptica").on("click", function(ev){
       archivos = ev.target.files;
   });
 
-  //$(".btnBorrarMarca").on("click", function(ev){
-  //    ev.preventDefault();
-  //    borrarMarca(this.getAttribute('id_marca'));
-  //  });
-
-
-//  function borrarMarca(){
-//      $.get( "index.php?action=borrar_marca",{ id_marca: $(this).attr("data-id") }, function(data) {
-//      $('#contenido').html(data);
-//});
-//$( "#mostrar_adm_marca" ).trigger( "click" );
-//  }
-
   $('.btnBorrarMarca').click(function(){
     event.preventDefault();
      var id_marca = $(this).data("id");
@@ -43,6 +30,20 @@ $("#btnAgregarOptica").on("click", function(ev){
                   $( "#mostrar_adm_marca" ).trigger( "click" );
                 }
               });
+});
+
+$('.btnBorrarOptica').click(function(){
+  event.preventDefault();
+   var id_optica = $(this).data("id");
+    $.ajax({
+              url:"index.php?action=borrar_optica&id_optica=" + id_optica,
+              dataType:'HTML',
+              method: 'GET',
+              success: function(data){
+                $('#contenido').html(data);
+                $( "#mostrar_adm_opt" ).trigger( "click" );
+              }
+            });
 });
 
 

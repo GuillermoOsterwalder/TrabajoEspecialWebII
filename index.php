@@ -43,6 +43,10 @@ else {
         $lacasadelasopticasController->BorrarMarca();
         break;
 
+    case ConfigApp::$ACTION_BORRAR_OPTICA:
+        $lacasadelasopticasController->BorrarOptica();
+        break;
+
 }
 }
 ?>

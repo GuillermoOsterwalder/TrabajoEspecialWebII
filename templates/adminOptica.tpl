@@ -16,7 +16,7 @@
 
           <ul>
             {foreach $opticas as $optica}
-            <li>{$optica['titulo']} - {$optica['marca']['nombre']}</li>
+            <li>{$optica['titulo']} - {$optica['marca']['nombre']}<button type="button" class="btnBorrarOptica" data-id="{$optica['id']}">X</button></li>
             {/foreach}
           </ul>
         </div>

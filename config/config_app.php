@@ -12,6 +12,7 @@ class ConfigApp{
   public static $ACTION_MOSTRAR_ADMIN_MARCA = 'mostrar_adm_marca';
   public static $ACTION_MOSTRAR_OPTICA_UNICA = 'mostrar_optica';
   public static $ACTION_BORRAR_MARCA = 'borrar_marca';
+  public static $ACTION_BORRAR_OPTICA = 'borrar_optica';
 
 
 }

@@ -101,5 +101,17 @@ class opticasModel {
         return 'Imposible Borrar';
       }
 
+      function borrarOptica($id_optica){
+        $consulta = $this->db->prepare('DELETE FROM optica WHERE id=?');
+        $consulta->execute(array($id_optica));
+        $consulta = $this->db->prepare('DELETE FROM imagen WHERE fk_id_optica=?');
+        $consulta->execute(array($id_optica));
+
+        if($consulta->rowCount() > 0)
+          return 'Borrado';
+        else
+          return 'Imposible Borrar';
+        }
+
 }
 ?>

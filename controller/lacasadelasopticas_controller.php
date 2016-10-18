@@ -45,8 +45,11 @@ function mostrarOpticaUnica(){
 }
 
 function borrarMarca(){
-    //$id_marca = $_GET['id_marca'];
     $this->model->borrarMarca($_REQUEST['id_marca']);
+}
+
+function borrarOptica(){
+    $this->model->borrarOptica($_REQUEST['id_optica']);
 }
 
 }
