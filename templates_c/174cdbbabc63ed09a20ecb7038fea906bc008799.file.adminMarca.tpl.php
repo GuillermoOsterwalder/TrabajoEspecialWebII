@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.14, created on 2016-10-17 22:45:39
+<?php /* Smarty version Smarty-3.1.14, created on 2016-10-18 19:50:18
          compiled from ".\templates\adminMarca.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1146458052d7622f196-12309928%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '174cdbbabc63ed09a20ecb7038fea906bc008799' => 
     array (
       0 => '.\\templates\\adminMarca.tpl',
-      1 => 1476737034,
+      1 => 1476813013,
       2 => 'file',
     ),
   ),
@@ -46,8 +46,8 @@ foreach ($_from as $_smarty_tpl->tpl_vars['marca']->key => $_smarty_tpl->tpl_var
 $_smarty_tpl->tpl_vars['marca']->_loop = true;
 ?>
             <li><?php echo $_smarty_tpl->tpl_vars['marca']->value['nombre'];?>
- <a id="btnBorrarMarca" href="#" data-id="<?php echo $_smarty_tpl->tpl_vars['marca']->value['id'];?>
-" > <span class="glyphicon glyphicon-remove" aria-hidden="true"> </span> </a>  </li>
+ <button type="button" class="btnBorrarMarca" data-id="<?php echo $_smarty_tpl->tpl_vars['marca']->value['id'];?>
+">X</button>  </li>
             <?php } ?>
           </ul>
         </div>

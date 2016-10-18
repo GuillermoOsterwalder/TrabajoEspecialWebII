@@ -15,7 +15,7 @@
         <div class="panel-body">
           <ul>
             {foreach $marcas as $marca}
-            <li>{$marca['nombre']} <a id="btnBorrarMarca" href="#" data-id="{$marca['id']}" > <span class="glyphicon glyphicon-remove" aria-hidden="true"> </span> </a>  </li>
+            <li>{$marca['nombre']} <button type="button" class="btnBorrarMarca" data-id="{$marca['id']}">X</button>  </li>
             {/foreach}
           </ul>
         </div>
