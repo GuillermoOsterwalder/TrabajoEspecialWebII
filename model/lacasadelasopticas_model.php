@@ -113,5 +113,10 @@ class opticasModel {
           return 'Imposible Borrar';
         }
 
+        function modificarMarca($marca,$id){
+          $consulta = $this->db->prepare('UPDATE marca SET nombre=? WHERE id=?');
+          $consulta->execute(array($marca,$id));
+        }
+
 }
 ?>

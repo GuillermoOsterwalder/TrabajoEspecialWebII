@@ -52,5 +52,9 @@ function borrarOptica(){
     $this->model->borrarOptica($_REQUEST['id_optica']);
 }
 
+function modificarMarca(){
+    $this->model->modificarMarca($_REQUEST['marca'],$_REQUEST['id_marca']);
+}
+
 }
 ?>

@@ -30,11 +30,12 @@ $("#btnAgregarOptica").on("click", function(ev){
                   $( "#mostrar_adm_marca" ).trigger( "click" );
                 }
               });
+              event.preventDefault();
 });
 
 $('.btnBorrarOptica').click(function(){
   event.preventDefault();
-   var id_optica = $(this).data("id");
+    var id_optica = $(this).data("id");
     $.ajax({
               url:"index.php?action=borrar_optica&id_optica=" + id_optica,
               dataType:'HTML',
@@ -45,6 +46,10 @@ $('.btnBorrarOptica').click(function(){
               }
             });
 });
+
+//$('.btnModificarMarca').click(function(){
+  //event.preventDefault();
+//});
 
 
   function AgregarMarca(ev){

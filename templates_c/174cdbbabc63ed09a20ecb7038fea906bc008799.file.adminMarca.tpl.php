@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.14, created on 2016-10-18 19:50:18
+<?php /* Smarty version Smarty-3.1.14, created on 2016-10-19 19:31:16
          compiled from ".\templates\adminMarca.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1146458052d7622f196-12309928%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '174cdbbabc63ed09a20ecb7038fea906bc008799' => 
     array (
       0 => '.\\templates\\adminMarca.tpl',
-      1 => 1476813013,
+      1 => 1476897689,
       2 => 'file',
     ),
   ),
@@ -45,9 +45,18 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 foreach ($_from as $_smarty_tpl->tpl_vars['marca']->key => $_smarty_tpl->tpl_vars['marca']->value){
 $_smarty_tpl->tpl_vars['marca']->_loop = true;
 ?>
-            <li><?php echo $_smarty_tpl->tpl_vars['marca']->value['nombre'];?>
- <button type="button" class="btnBorrarMarca" data-id="<?php echo $_smarty_tpl->tpl_vars['marca']->value['id'];?>
-">X</button>  </li>
+          <li>
+
+            <?php echo $_smarty_tpl->tpl_vars['marca']->value['nombre'];?>
+
+            <button type="button" class="btnBorrarMarca" data-id="<?php echo $_smarty_tpl->tpl_vars['marca']->value['id'];?>
+"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
+
+            <button type="button" class="btnModificarMarca" data-id="<?php echo $_smarty_tpl->tpl_vars['marca']->value['id'];?>
+"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></button>
+
+          </li>
+
             <?php } ?>
           </ul>
         </div>
@@ -58,7 +67,7 @@ $_smarty_tpl->tpl_vars['marca']->_loop = true;
   <form method="POST" role="form">
   <div class="form-group">
     <label for="usr">Insertar nueva marca:</label>
-    <input type="text" class="form-control" name="marca" id="marca" placeholder="Ingrese marca" required >
+    <input type="text" class="" name="marca" id="marca" placeholder="Ingrese marca" required >
   </div>
 
 <button type="submit" id="btnAgregarMarca" class="btn btn-default center-block">Enviar</button>

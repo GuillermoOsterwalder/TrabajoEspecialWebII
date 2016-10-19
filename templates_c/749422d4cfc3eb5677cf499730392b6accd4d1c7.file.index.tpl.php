@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.14, created on 2016-10-17 21:58:43
+<?php /* Smarty version Smarty-3.1.14, created on 2016-10-19 19:27:55
          compiled from ".\templates\index.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:3039458052d73859ee7-56113973%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '749422d4cfc3eb5677cf499730392b6accd4d1c7' => 
     array (
       0 => '.\\templates\\index.tpl',
-      1 => 1476636368,
+      1 => 1476898010,
       2 => 'file',
     ),
   ),
@@ -15,9 +15,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
-  'has_nocache_code' => false,
   'version' => 'Smarty-3.1.14',
   'unifunc' => 'content_58052d73898cd7_41657206',
+  'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_58052d73898cd7_41657206')) {function content_58052d73898cd7_41657206($_smarty_tpl) {?><!DOCTYPE html>
 <html lang="en">
@@ -77,7 +77,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 <footer class="text-center">
         <div class="container">
-            <p>Powered by Hefesto Software&reg. // Nuestras lineas rotativas: 223-5252813, 2291-412921 // O buscanos en facebook como  <a href="https://www.facebook.com/HefeSoft" target="_blank">HefeSoft</a>.</p>
+            <p>Powered by Tarta Corp&reg </p>
         </div>
 </footer>
 

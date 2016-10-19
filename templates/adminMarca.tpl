@@ -15,7 +15,15 @@
         <div class="panel-body">
           <ul>
             {foreach $marcas as $marca}
-            <li>{$marca['nombre']} <button type="button" class="btnBorrarMarca" data-id="{$marca['id']}">X</button>  </li>
+          <li>
+
+            {$marca['nombre']}
+            <button type="button" class="btnBorrarMarca" data-id="{$marca['id']}"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
+
+            <button type="button" class="btnModificarMarca" data-id="{$marca['id']}"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></button>
+
+          </li>
+
             {/foreach}
           </ul>
         </div>
@@ -26,7 +34,7 @@
   <form method="POST" role="form">
   <div class="form-group">
     <label for="usr">Insertar nueva marca:</label>
-    <input type="text" class="form-control" name="marca" id="marca" placeholder="Ingrese marca" required >
+    <input type="text" class="" name="marca" id="marca" placeholder="Ingrese marca" required >
   </div>
 
 <button type="submit" id="btnAgregarMarca" class="btn btn-default center-block">Enviar</button>

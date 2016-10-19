@@ -56,7 +56,7 @@
 
 <footer class="text-center">
         <div class="container">
-            <p>Powered by Hefesto Software&reg. // Nuestras lineas rotativas: 223-5252813, 2291-412921 // O buscanos en facebook como  <a href="https://www.facebook.com/HefeSoft" target="_blank">HefeSoft</a>.</p>
+            <p>Powered by Tarta Corp&reg </p>
         </div>
 </footer>
 
