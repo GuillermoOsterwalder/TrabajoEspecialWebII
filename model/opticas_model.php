@@ -1,5 +1,5 @@
 <?php
-class opticasModel {
+class OpticasModel {
   private $db;
 
   function __construct() {
@@ -33,7 +33,6 @@ class opticasModel {
       $consulta = $this->db->prepare("SELECT * FROM marca");
       $consulta->execute();
       $marcas = $consulta->fetchAll();
-
       return $marcas;
     }
 
@@ -59,11 +58,6 @@ class opticasModel {
     }
 }
 
-    function agregarMarca($marca){
-      $consulta = $this->db->prepare('INSERT INTO marca(nombre) VALUES(?)');
-      $consulta->execute(array($marca));
-    }
-
 
     function getOptica($id_optica){
       $opticas = array();
@@ -86,20 +80,6 @@ class opticasModel {
       return $opticas;
     }
 
-    function borrarMarca($id_marca){
-      $consulta = $this->db->prepare('DELETE FROM marca WHERE id=?');
-      $consulta->execute(array($id_marca));
-      $consulta = $this->db->prepare('DELETE FROM optica WHERE fk_id_marca=?');
-      $consulta->execute(array($id_marca));
-      $id_optica = $this->db->lastInsertId();
-      $consulta = $this->db->prepare('DELETE FROM imagen WHERE fk_id_optica=?');
-      $consulta->execute(array($id_optica));
-
-      if($consulta->rowCount() > 0)
-        return 'Borrado';
-      else
-        return 'Imposible Borrar';
-      }
 
       function borrarOptica($id_optica){
         $consulta = $this->db->prepare('DELETE FROM optica WHERE id=?');
@@ -113,10 +93,6 @@ class opticasModel {
           return 'Imposible Borrar';
         }
 
-        function modificarMarca($marca,$id){
-          $consulta = $this->db->prepare('UPDATE marca SET nombre=? WHERE id=?');
-          $consulta->execute(array($marca,$id));
-        }
 
 }
 ?>
